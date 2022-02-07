@@ -1,0 +1,412 @@
+:root {
+    --main-color:#ff9808;
+}
+
+body{
+   /* font-family: 'Open sans','snns-serif';*/
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    width: 950px;
+
+}
+/*--------------start seting box ------------------*/
+.seting-box{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #fff;
+    width: 200px;
+    z-index: 1000;
+    min-height: 100vh;
+    transition: .3s;
+
+}
+.seting-box.open{
+    left:0;
+}
+.seting-box .toggle-seting {
+    position:absolute;
+    right: -20px;
+    top:100px;
+    background-color: #fff;
+    width: 25px;
+    padding: 5px 0;
+    transition: .3s;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+.seting-box .option-box{
+     padding: 10px;
+    text-align: center;
+    margin: 10px 0px 0px;
+    background-color: #eee;
+
+}
+.seting-box .option-box h4{
+    font-size: 14px;
+    padding: 5px;
+    margin: 0;
+    color: #666;
+
+}
+.seting-box .seting-container .option-box .colors-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.seting-box .option-box .colors-list li{
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+
+} 
+.seting-box .option-box .colors-list li.active{
+    opacity: .5;
+}
+.seting-box .option-box .colors-list li:first-child{
+    background-color: #ff9800;
+}
+.seting-box .option-box .colors-list li:nth-child(2){
+    background-color: #5861df;
+}
+.seting-box .colors-box .option-list li:nth-child(3){
+    background-color:#df1f5f;
+}
+.seting-box .option-box .colors-list li:nth-child(4){
+    background-color:#e91ece;
+}
+.seting-box .option-box .colors-list li:nth-child(5){
+    background-color:#1ee99b;
+}
+/*---------------random bacjground--------------------------*/
+
+.seting-box .random-back .yes,
+ 
+.seting-box .random-back .no{
+    width: 50px;
+    color: #fff;
+    margin-top:20px;
+    font-weight: bold;
+    border-radius: 4px;
+ padding: 4px 10px;
+    opacity: .5;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #333;
+
+}
+.seting-box .random-back span.active{
+    opacity: 1;
+}
+
+/*
+.seting-box .toggle-seting .fa-gear{
+    padding: 8px 0;    width: 30px;
+
+}
+.seting-box .seting-box .seting-container{
+
+}*/
+
+/*----------------------------start landig bage------------------------*/
+.landing-bage{
+    min-height: 100vh;
+    background-image: url("imgs/01.jpg");
+    background-size: cover;
+    position: relative;
+}
+.landing-bage .overlay{
+    background-color: rgba(0,0,0, 0.61);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index:1;
+}
+.header-area{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.header-area .logo{
+    width: 300px;
+    padding:15px;
+}
+.header-area .links{
+    list-style: none;
+    width: 100%;
+    text-align: right; 
+    padding: 0;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.header-area .links li{
+     display: inline-block;
+     margin-left: 15px;
+}
+.header-area .links li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+.header-area .links li a:hover,
+    .header-area .links li a.active1{
+        color: var(--main-color);
+    }
+.introduction-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+.introduction-text h1{
+    font-size: 32px;
+    margin: 0 0 5px ;
+}
+.introduction-text h1 span{
+    color: var(--main-color);
+}
+.introduction-text p{
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+}
+/*----------------End landing bage-------------------------*/
+
+/*----------------------------start About Us ---------*/
+.about-us{
+     display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    margin-top: 20px;
+
+}
+.about-us .info-box{
+   flex: 1;
+   padding: 30PX;
+}
+.about-us .info-box h2{    
+        font-weight: bold;
+        font-size: 30px;
+        color: var(--main-color);
+         margin: 0 0 10PX;   
+}
+.about-us .info-box p{
+    line-height: 1.5;
+    color: #787878;
+    margin: 0PX;
+}
+.about-us .image-box{
+    flex: 1;
+    padding-top: 45px;
+    margin-left: 10px;
+    text-align: center;
+}
+.about-us .image-box img{
+    width: 200px;
+}
+/*-----------------end ~bout Us ----------*/
+/*start skills box*/
+.skllis{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+
+}
+.skllis h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+     margin: 0 0 50PX; 
+     text-align: center;
+}
+.skllis .skill-box{
+    
+    display: flex;
+    padding:15px;
+    margin: 15px auto 0;
+    background-color: #fff;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.skllis .skill-box .skill-name{
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+.skllis .skill-box .skill-progress{
+    height: 30px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 6px;
+    position: relative;
+
+}
+.skllis .skill-box .skill-progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: .7s;
+    height: 100%;
+    background-color:  var(--main-color);
+    border-radius: 3px;
+   
+}
+/*End skills box*/
+/*----------start time line -------------*/
+.timeline{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+   
+}
+.timeline-content{
+        position: relative;
+        overflow: hidden;
+}
+.timeline .timeline-content:before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    background-color: var(--main-color);
+    margin-left: -1px;
+    top: 0;
+}
+.timeline .timeline-content .year{
+    margin: 20px auto;
+    width: 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    text-align: center;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+.timeline .timeline-content .left,
+.timeline .timeline-content .right{
+    width: calc(50% - 25px);
+    margin-bottom: 40px;
+    position: relative;
+}
+.timeline .timeline-content .left{
+    float: left;
+}
+
+.timeline .timeline-content .right{
+    float: right;
+}
+.timeline .timeline-content .content{
+    padding: 20px;
+    background-color: #fff;
+}
+.timeline .timeline-content .content h3{
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 0 10px;
+}
+.timeline .timeline-content .content p{
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.timeline .timeline-content .left:before{
+  
+    right: -35px;
+    
+}
+
+.timeline .timeline-content .right:before{
+    left: -35px;
+    
+}
+.timeline .timeline-content .right:before,
+.timeline .timeline-content .left:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border:3px solid var(--main-color);
+    border-radius: 50%;
+    background-color: #fff;
+    top:20px;
+}
+.clearfix{
+    clear: both;
+}
+/*-------start testmonianls --------*/
+.testmonianls-content{
+background-color: rgb(66, 196, 40);
+position: relative ;
+height: 500px;
+padding-top: 60px;
+padding-bottom: 40px ;
+}
+.testmonianls-content:before{
+    content: " ";
+    width: 50%;
+    background-color:var(--main-color);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+.testmonianls-content:after{
+ content: " ";
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;   
+    background-color: #333;
+    height: 100%;
+}
+.testmonianls-content h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+     margin: 0 0 30PX; 
+     text-align: left;
+     position: relative;
+     z-index: 2;
+}
+.testmonianls-content .ts-box{
+position: relative;
+z-index: 2;
+width: calc(74%/3);
+float: left;
+background-color: #fff;
+padding: 15px;
+margin-left: 13px;
+    
+
+}
+.testmonianls-content .ts-box:not(last-of-tyoe) {
+    margin-right: 4%;
+}
+/*-------End testmonianls --------*/
